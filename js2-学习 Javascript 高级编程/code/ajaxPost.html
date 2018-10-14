@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX-post</title>
+  <style>
+    p {font-size:20px}
+  </style>
+</head>
+<body>
+  <h1>Ajax-post</h1>
+  <p>id£º<input id="t1" type="text"></p>
+  <p>ÐÕÃû£º<input id="t2" type="text" onblur="post()"></p>
+  <p><span id="t4"></span></p>
+  <script>
+    function post() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4) {
+        if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status >= 304) {
+          alert(xmlhttp.responseText);
+          var oTest = document.getElementById("t4");
+          oTest.innerHTML = xmlhttp.responseText;
+        } else {
+          alert("error");
+        }
+      };
+    };
+    var t1 = document.getElementById("t1").value;
+    var t2 = document.getElementById("t2").value;
+    var param = "id=" + encodeURIComponent(t1) + "&name=" +  encodeURIComponent(t2);
+    xmlhttp.open("post", "post.jsp", true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttp.send(param);
+    }
+  </script>
+</body>
+</html>

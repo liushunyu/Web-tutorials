@@ -1,0 +1,113 @@
+*{
+  font-size: 20px;
+}
+#header {
+  height: 500px;
+  margin: 0px auto;
+}
+.carousel {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+.carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 100%;
+  height:500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  position: absolute;
+  top: 20px;
+  right: -1350px;
+  width: 100%;
+  height: 300px;
+}
+.carousel nav img {
+  cursor: pointer;
+  border:solid 3px white;
+}
+.carousel nav img:hover{
+  border:solid 3px rgb(54,84,153);
+}
+
+.carousel #searchbox{
+  margin: 0 auto;
+  height: 100px;
+  width: 600px;
+  position: absolute;
+  bottom: 100px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  color: rgb(255,255,255);
+}
+.carousel #searchbox input{
+  margin:20px 20px auto;
+}
+.carousel #searchbox #inputbox_outter{
+  height: 40px;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+}
+.carousel #searchbox #inputbox_outter #inputbox{
+  margin: 10px 10px auto;
+  height: 20px;
+  width: 480px;
+  border:none;
+}
+.carousel #searchbox #search{
+  position: relative;
+}
+.carousel #searchbox #button_outter{
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+
+}
+.carousel #searchbox button{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}

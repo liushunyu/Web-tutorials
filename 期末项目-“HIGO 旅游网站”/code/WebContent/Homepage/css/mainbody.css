@@ -1,0 +1,32 @@
+        #mainbody1{
+        	width: 980px;
+        	height: 400px;
+        	margin-bottom: 10px;
+        	background-color: #FFFFFF;
+        	border-radius: 5px;
+        	position: relative;
+
+        }
+        #mainbody1 #subheader{
+        	padding: 5px 40px;
+        	height: 50px;
+        	border-radius: 2px;
+        }
+        #mainbody1 #nearvisit{
+        	position: absolute;
+        	margin: 10px 20px auto;
+        }
+        #mainbody1 #leftcol{
+        	float: left;
+        }
+        #mainbody1 #rightcol{
+        	position: absolute;
+        	float: right;
+        	right: 10px;
+        	top: 70px;
+        }
+        #mainbody1 #mainbody1_img{
+        	float: left;
+        	position: absolute;
+        	left: 20px;
+        }

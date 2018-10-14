@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>slides</title>
+    <style>
+        #slideMain {            
+            width:930px;
+            height: 620px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .slides {
+            width:4650px;
+            animation-name:myfirst;
+            animation-duration:20s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+        }
+
+        .slide {
+            width:930px;
+            height: 620px;
+            margin:0px;
+            padding:0px;
+            display: block;
+            float: left;   
+        }
+
+        @keyframes myfirst { 
+             0%{transform: translateX(0px);}
+             12.5%{transform: translateX(0px);}
+             25%{transform: translateX(-930px);}
+             37.5%{transform: translateX(-930px);}
+             50%{transform: translateX(-1860px);}
+             62.5%{transform: translateX(-1860px);}
+             75%{transform: translateX(-2790px);}
+             87.5%{transform: translateX(-2790px);}
+             100%{transform: translateX(-3720px);}
+        }
+    </style>
+</head>
+<body>
+    <div id="slideMain">
+         <div class="slides">
+                 <img class="slide" src="images/img11.jpg">
+                 <img class="slide" src="images/img12.jpg">
+                 <img class="slide" src="images/img13.jpg">
+                 <img class="slide" src="images/img14.jpg">
+                 <img class="slide" src="images/img11.jpg">
+         </div>
+    </div>
+</body>
+</html>

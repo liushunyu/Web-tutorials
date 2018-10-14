@@ -1,0 +1,144 @@
+<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+         .leaf {
+             width:52px;
+             height:56px;
+             background-image: url('images/leaf.gif');
+             float: left;
+             opacity: 0;
+         }
+         #bk {
+             width:600px;
+             height:600px;
+             margin:0 auto;
+             padding:20px;
+             background-image: url('images/leaf_bk.jpg');
+             position: relative;
+         }
+
+         @keyframes myfirst {
+          0%{
+            transform:translateY(0px) rotateX(0deg) rotateY(0deg);
+            opacity: 0;
+          }
+          15%{
+            transform:translateY(0px) rotateX(0deg) rotateY(0deg);
+            opacity: 1;
+          }
+          50%{
+            transform:translateY(225px) rotateX(180deg) rotateY(180deg);
+          }
+          90%{
+            transform:translateY(550px) rotateX(360deg) rotateY(360deg);
+            opacity: 1;
+          }
+          100%{
+            transform:translateY(550px) rotateX(360deg) rotateY(360deg);
+            opacity: 0;
+          }
+         }
+         @keyframes mysecond {
+         }
+
+         #d1 {
+            position: absolute;
+            left: 5%;
+            animation-name:myfirst;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d2 {
+            position: absolute;
+            left: 20%;
+            animation-name:myfirst;
+            animation-duration:3s;
+            animation-delay:0.5s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d3 {
+            position: absolute;
+            left: 35%;
+            animation-name:myfirst;
+            animation-duration:3s;
+            animation-delay:1s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d4 {
+            position: absolute;
+            left: 50%;
+            animation-name:myfirst;
+            animation-duration:2s;
+            animation-delay:1.2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d5 {
+            position: absolute;
+            left: 65%;
+            position: relative;
+            animation-name:myfirst;
+            animation-duration:3s;
+            animation-delay:2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d6 {
+            position: absolute;
+            left: 80%;
+            position: relative;
+            animation-name:myfirst;
+            animation-duration:2.5s;
+            animation-delay:0.5s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d7 {
+            position: absolute;
+            left: 105%;
+            animation-name:myfirst;
+            animation-duration:3s;
+            animation-delay:1.5s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+
+         #d8 {
+            position: absolute;
+            left: 120%;
+            animation-name:myfirst;
+            animation-duration:1.5s;
+            animation-delay:0.6s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+         }
+      </style>
+   </head>
+   <body>
+    <div id="bk">
+      <div id="d1" class="leaf"></div>
+      <div id="d2" class="leaf"></div>
+      <div id="d3" class="leaf"></div>
+      <div id="d4" class="leaf"></div>
+      <div id="d5" class="leaf"></div>
+      <div id="d6" class="leaf"></div>
+      <div id="d7" class="leaf"></div>
+      <div id="d8" class="leaf"></div>
+    </div>
+    </body>
+</html>
+         
+
+                

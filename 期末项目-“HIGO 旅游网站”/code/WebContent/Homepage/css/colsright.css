@@ -1,0 +1,12 @@
+    #mainbody2 .cols .colsright .channel_shadow{
+        position: relative;
+        float: right;
+        background-color: white;
+        height: 418px;
+        border: 1px #CCCCCC solid;
+        margin: 5px 0 auto;
+    }
+    #mainbody2 .cols .colsright .channel_shadow .channel{
+        margin: 0 auto;
+        padding: 5px;
+    }

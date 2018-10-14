@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX-get</title>
+  <style>
+     p {font-size:20px}
+   </style>
+</head>
+<body>
+  <h1>Ajax-get</h1>
+  <p>id£º<input id="t1" type="text" onblur="get()"></p>
+  <p id="t2">[ÎÞ]</p>
+  <script>
+    function get() {
+      var xmlhttp = new XMLHttpRequest(); 
+      xmlhttp.onreadystatechange = function () { 
+        if (xmlhttp.readyState == 4) { 
+          if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304) { 
+            alert(xmlhttp.responseText); 
+            var oTest = document.getElementById("t2");
+            oTest.innerHTML = xmlhttp.responseText;
+          } else {
+            alert("error");
+          }
+        };
+      };
+      xmlhttp.open("get", "get.jsp?id=" + document.getElementById("t1").value, true);
+      xmlhttp.send(null);    
+    }
+  </script>
+</body>
+</html>

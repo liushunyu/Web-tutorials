@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8">
+    <title>layout1</title>
+    <style>
+        * {margin:0;padding:0;font:24px 黑体;}
+        li{list-style-type:none}
+        body {background:#FF8}
+        .clear {clear:both}
+
+        #header_outer{background: #888;}
+        #nav_outer{background: #AAA;}
+        #main1_outer{background: #CFC;}
+        #footer_outer{background: #888;}
+
+        .wrapper{margin: 0 auto; width: 980px;}
+
+        #header{background: #666;height: 200px;}
+        #nav{background: #555;height: 40px;}
+        #main{background: #AA6;}
+        #footer{background: #666;height: 100px;}
+
+        .main_l{
+          float: left;
+          box-sizing: border-box;
+          background: #A55;
+          width: 300px;
+          padding: 10px 10px;
+        }
+        .main_r{
+          float: right;
+          box-sizing: border-box;
+          background: #55A;
+          width: 310px;
+          padding: 10px 10px;
+        }
+
+        .main_l>.row1{
+          box-sizing: border-box;
+          background: #F88;
+          height: 140px;
+          margin: 10px 0px;
+        }
+
+        .main_l>.row2{
+          box-sizing: border-box;
+          background: #88F;
+          height: 220px;
+          margin-top: 20px;
+        }
+
+        .main_r>.row1{
+          box-sizing: border-box;
+          background: #F88;
+          height: 140px;
+          margin: 10px 0px;
+        }
+
+        .main_r>.row2{
+          box-sizing: border-box;
+          background: #88F;
+          height: 200px;
+          margin-top: 20px;
+        }
+
+        .main_m{
+          padding: 10px 320px 0px 310px;
+        }
+
+        .main_m>.row1{
+          box-sizing: border-box;
+          background: #F88;
+          height: 140px;
+          margin: 10px 0px;
+        }
+
+        .main_m>.row2{
+          box-sizing: border-box;
+          background: #88F;
+          height: 200px;
+          margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header_outer">
+        <div id="header" class="wrapper">
+             Header
+         </div><!--header-->
+    </div> <!--header_outer-->
+
+    <div id="nav_outer">
+        <ul class="wrapper" id="nav">
+            <li>Menu</li>
+        </ul>      
+    </div>
+
+    <div id="main1_outer" class="main_outer">
+        <div class="wrapper" id="main">
+            <div class="main_l">
+                <div class="row1">
+                    board 1
+                 </div>
+                <div class="row2">
+                    board 2
+                </div>
+            </div><!--main_l-->
+            <div class="main_r">
+                <div class="row1">
+                    board 5
+                </div>
+                <div class="row2">
+                    board 6
+                </div>
+            </div><!--main_r-->
+            <div class="main_m">
+                <div class="row1">
+                     board 3
+                </div>
+                <div class="row2">
+                     board 4
+                </div>
+            </div><!--main_m--> 
+            <div class="clear"></div>
+        </div> <!--main wrapper-->
+    </div> <!--main1_outer-->
+
+    <div id="footer_outer">
+        <div id="footer" class="wrapper">
+            Footer
+        </div><!--footer-->
+    </div> <!--footer_outer-->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+ <head>
+   <title>编程器</title>
+   <style>
+    input {width:5em}
+   </style>
+   <script>
+      function calc(){
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var func = new Function("x","y",
+          document.getElementById("func").value);
+        func(x,y);
+      }
+   </script>
+ </head>
+ <body>
+  <h1>编程器</h1>
+  <p>x:&nbsp;<input type="text" id="x"></p>
+  <p>y:&nbsp;<input type="text" id="y"></p>
+  <p><label style="vertical-align: top;">program:&nbsp;</label></label><textarea style="width:15em;height: 10em;" type="text" id="func"></textarea></p>
+  <p><input  type="button" value="运行" onclick="calc()"></p>
+ </body>
+</html>
+

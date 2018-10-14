@@ -1,0 +1,194 @@
+<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+         .logo img{
+			 height: 6%;
+			 width: 6%;
+         }
+         body {
+			 width: 100%;
+			 height: 100%;
+			 background:linear-gradient(to right,antiquewhite 0% ,aliceblue 30%,aquamarine 100%) no-repeat fixed;
+			 overflow: hidden;
+         }
+
+         #d1 {
+			 position: relative;
+			 left: 0%;
+			 animation-name: mysecond;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+         }
+
+         #d2 { 
+			 position: relative;
+			 left: 93%;
+			 animation-name: myfirst;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+         }
+
+         #d3 {
+			 position: relative;
+			 left: 0%;
+			 animation-name: mysecond;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+			 animation-delay: 2s;
+         }
+
+         #d4 {
+			 position: relative;
+			 left: 93%;
+			 animation-name: myfirst;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+			 animation-delay: 1s;
+         }
+
+         #d5 {
+			 position: relative;
+			 left: 0%;
+			 animation-name: mysecond;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+			 animation-delay: 1s;
+         }
+
+         #d6 {
+			 position: relative;
+			 left: 93%;
+			 animation-name: myfirst;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+			 animation-delay: 2s;
+         }
+
+         #d7 {
+			 position: relative;
+			 left: 0%;
+			 animation-name: mysecond;
+			 animation-duration: 3s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function:linear;
+			 animation-delay: 2s;
+         }
+
+         #d8 img{
+			 position: absolute;
+			 left: -20%;
+			 top:10%;
+			 animation-name:logo;
+			 animation-duration:2s; 
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-delay: 1s;
+         }
+		  .logoa1{
+			  position: absolute;
+			 left: -30%;
+			 top:10%;
+			 animation-name:aaa;
+			 animation-duration:5s; 
+			 animation-iteration-count: infinite;
+			  animation-delay: 2s;
+		  }
+		  .logoa2 {font-size: 50px;color: red;}
+		  .logoa2{
+			  position: absolute;
+			 left: -40%;
+			 top:30%;
+			 animation-name:aaa;
+			 animation-duration:5s; 
+			 animation-iteration-count: infinite;
+			  animation-delay: 6s;
+		  }
+		  .logoa3{
+			  position: absolute;
+			 left: -30%;
+			 top:20%;
+			 animation-name:aaa;
+			 animation-duration:5s; 
+			 animation-iteration-count: infinite;
+			  animation-delay: 10s;
+		  }
+		  @keyframes myfirst{
+			  0%{left:93%;}
+			  50%{left:50%;}
+			  100%{left:0%;}
+		  }
+		  @keyframes mysecond{
+			  0%{left:0%;}
+			  50%{left:50%;}
+			  100%{left:93%;}
+		  }
+		  @keyframes logo{  
+			  0% {
+				  opacity:0;
+				  transform:scale(0.2,0.2) rotateZ(0deg);
+				  height: 10%;
+				  width: 10%;
+			  }
+			  50% {
+				  opacity:0.1;
+				  transform:scale(0.6,0.6) rotateZ(360deg);
+				  height: 50%;
+				  width: 50%;
+			  }
+			  75% {
+				  opacity:0.1;
+				  transform:scale(0.75,0.75) rotateZ(445deg);
+				  height: 50%;
+				  width: 50%;
+			  }
+			  100% {
+				  opacity:1;
+				  transform:scale(1,1) rotateZ(360deg);
+				  height: 100%;
+				  width: 100%;
+			  }
+		  }
+		  @keyframes aaa{
+			  0%{left:-20%;}
+			  100%{left:70%;opacity: 0;}
+		  }
+
+      </style>
+   </head>
+   <body>
+    
+      <div id="d1" class="logo"><img src="image/logo2.png"></div>
+      <div id="d2" class="logo"><img src="image/logo9.png"></div>
+      <div id="d3" class="logo"><img src="image/logo6.png"></div>
+      <div id="d4" class="logo"><img src="image/logo4.png"></div>
+      <div id="d5" class="logo"><img src="image/logo7.png"></div>
+      <div id="d6" class="logo"><img src="image/logo3.png"></div>
+      <div id="d7" class="logo"><img src="image/logo8.png"></div>
+      <div id="d8" class="logo"><img src="image/logo10.png"></div>
+	   <div id="d9">
+	   		<h1 class="logoa1">是不是很想拍死他们……</h1>
+	   		<h1 class="logoa2">我也是这么想的……</h1>
+	   		<h1 class="logoa3">太贱太欠抽了……</h1>
+	   	</div>
+    
+    </body>
+</html>
+         
+
+                

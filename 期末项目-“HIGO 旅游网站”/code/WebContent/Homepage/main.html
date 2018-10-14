@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML>
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Higo!  </title>
+    <script src="js/rotate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mainbody.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/colsleft.css">
+    <link rel="stylesheet" type="text/css" href="css/colsright.css">
+   
+</head>
+<style>
+        body{
+            margin: 0 auto;
+            background-color: rgba(151,234,202,0.1);
+        }
+        li{
+            list-style: none;
+        }
+        #main {
+        	overflow: hidden;
+        	padding: 0px 0px 5px 0px;
+        	width: 980px;
+        	margin: 0 auto;
+        }
+        #mainbody2{
+        	height: 850px;
+        }
+</style>  
+<body>
+
+<div id="navigation_outer">
+	<div id="navigation_inner">
+		<div id="navigation_inner_img"><img src="images/logo.jpg" height="80" width="80"></div>
+		<ul id="nav">
+    		<li><a href="#" class="nav_hover">首页</a></li>
+    		<li><a href="#">目的地</a></li>
+    		<li><a href="#">攻略</a></li>
+    		<li><a href="article.jsp">博客</a>
+    			<ul class="subnav">
+            		<li><a href="#">照片PK</a></li>
+            		<li><a href="#">旅行电台</a></li>
+            		<li><a href="#">分歧终端机</a></li>
+            		<li><a href="#">VIP</a></li>
+            		<li><a href="#">嗨狗</a></li>
+        		</ul>
+        	</li>
+ 			<li><a href="login.jsp">登录</a></li>
+ 			<li><a href="register.jsp">注册</a></li>
+		</ul>
+	</div>
+</div>
+<div id="header">
+    <div class="carousel" data-gap="0">
+        <figure>
+            <img src="img/11.jpg" alt="">
+            <img src="img/12.jpg" alt="">
+            <img src="img/13.jpg" alt="">
+            <img src="img/14.jpg" alt="">
+            <img src="img/15.jpg" alt="">
+            <img src="img/16.jpg" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li><img src="img/11.jpg" height="60" width="80" id="1"></li>
+                <li><img src="img/12.jpg" height="60" width="80" id="2"></li>
+                <li><img src="img/13.jpg" height="60" width="80" id="3"></li>
+                <li><img src="img/14.jpg" height="60" width="80" id="4"></li>
+                <li><img src="img/15.jpg" height="60" width="80" id="5">
+                </li>
+                <li><img src="img/16.jpg" height="60" width="80" id="6">
+                </li>
+            </ul>
+        </nav>
+        <div id="searchbox">
+            <form action="main.html" method="post">
+                <input name="group" value="grp1" type="radio" id="checkbox1" checked />全部
+                <input name="group" value="grp2" type="radio" id="checkbox2" />酒店
+                <input name="group" value="grp3" type="radio" id="checkbox3" />机票
+                <input name="group" value="grp4" type="radio" id="checkbox3" />目的地
+                <div id="search">
+                    <div id="inputbox_outter">
+                        <input type="text" name="search" id="inputbox"></div>
+                    <div id="button_outter">
+                        <button name="search" type="submit" value="搜索" > GO </button> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="main">
+        <div id="mainbody1">
+        	<div id="mainbody1_img"><img src="images/19.png"></div>
+        	<div id="subheader"><p>景点推荐</p></div>
+        	<div id="clear"></div>
+        	<div id="leftcol">
+	        	<table id="nearvisit">
+	        		<tr>
+	        			<td id="td">
+	        				<span><img src="images/11.png" height="150" width="180"></span>
+	        				<span><img src="images/12.png" height="150" width="180"></span>
+	        				<span><img src="images/13.png" height="150" width="180"></span>
+	        				<span><img src="images/14.png" height="150" width="180"></span>
+	        			</td>
+	        		</tr>
+	        		<tr>
+	        			<td id="td">
+	        				<span><img src="images/15.png" height="150" width="180"></span>
+	        				<span><img src="images/16.png" height="150" width="180"></span>
+	        				<span><img src="images/17.png" height="150" width="180"></span>
+	        				<span><img src="images/18.png" height="150" width="180"></span>
+	        			</td>
+	        		</tr>
+	        	</table>        		
+        	</div>
+        	<div id="rightcol">
+        		<img src="images/advertisement.png" height="310" width="200">
+        	</div>
+        </div>
+        <div id="mainbody2">
+            <div class="cols">
+                <div class="colsleft">
+                        <div class="cols01">
+                            <div class="channel_shadow">
+                                <div class="channel">
+                                    <h3><span class="newsmore"><a href="#">进入&gt;&gt;</a></span><span id="sysunews01" class="" onmouseover="switchNews('sysunews01','newslist01');this.blur();">旅行美图</span> <span id="sysunews02" class="newsdown" onmouseover="switchNews('sysunews02','newslist02');this.blur();" onclick="location.href='#';">share &amp; show</span></h3>
+                                    <div id="newslist01" class="">
+                                        <img src="images/1.png" height="400" width="356">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel_shadow">
+                                <div class="channel">
+                                    <h3><span class="newsmore"><a href="#">更多&gt;&gt;</a></span>热门游记</h3>
+                                    <ul>
+										<li><span class="newstime">12-06</span><a href="#" target="_blank" title="【日本关西】相伴一场，人来人往，即为日常">
+										【日本关西】相伴一场,人来人往,即为日常... 
+										    </a></li>
+										<li><span class="newstime">12-05</span><a href="#" target="_blank" title="【浙江乌镇】戏精男友主导的乌镇上海之旅">【浙江乌镇】戏精男友主导的乌镇上海之旅... 
+										    </a></li>
+										<li><span class="newstime">12-05</span><a href="#" target="_blank" title="【肯尼亚】南至拉姆北至图尔卡姆湖">            【肯尼亚】南至拉姆北至图尔卡姆湖... 
+										    </a></li>
+										<li><span class="newstime">12-05</span><a href="#" target="_blank" title="【加拉帕戈斯】跨越万水千山，来日不等方长”？">【加拉帕戈斯】跨越万水千山，来日不等方长... 
+										    </a></li>
+										<li><span class="newstime">12-04</span><a href="#" target="_blank" title="【维也纳】我在维也纳写了一封信给你">
+										 【维也纳】我在维也纳写了一封信给你地址是... 
+										    </a></li>
+									</ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cols01">
+                            <div class="channel_shadow">
+                                <div class="channel">
+                                    <h3><span id="sysunews03" class="newsdown" onmouseover="switchMeiti('sysunews03','newslist03');this.blur();">最热景点</span> <span id="sysunews04" class="" onmouseover="switchMeiti('sysunews04','newslist04');this.blur();" onclick="location.href='#';">Hot！</span> </h3>
+                                    <div id="newslist03">
+                                        <ul id="xsyg01">
+                                            <li><span class="newstime">11-18 </span><a href="#" target="_blank" title="北京：冷冷的风刮不灭我一颗向往北京的心">本次游记是带家里老人自由行,所以安排很随...</a></li>
+                                            <li><span class="newstime">11-17 </span><a href="#" target="_blank" title="朝鲜：失联7天，相反日子，信仰国度">来朝鲜，并非证明自己多勇敢，仅仅是为了...</a></li>
+                                            <li><span class="newstime">11-17 </span><a href="#" target="_blank" title="青海：2300公里，过完一整个温暖如诗的秋天。">出行前我跟小伙伴们说，跟着我，要吃苦的...</a></li>
+                                            <li><span class="newstime">11-16 </span><a href="#" target="_blank" title="澳大利亚：我在澳大利亚的365天">没有环澳，没有换宿，没有多么牛逼的故事...</a></li>
+                                            <li><span class="newstime">11-16 </span><a href="#" target="_blank" title="簧岭村">  篁岭因”晒秋”闻名遐迩，“天街”似玉带...</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel_shadow">
+                                <div class="channel">
+                                     <h3><span class="newsmore"><a href="#">更多&gt;&gt;</a></span>旅拍大赛 - 我在路上最爱你</h3>
+                                    <img src="images/2.png" height="420" width="356">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="channel gonggao">
+                            <h3><span class="newsmore"><a href="#">更多&gt;&gt;</a></span>专栏</h3>
+                            <p class="commontext">
+                                <a href="#">【小时光专栏】这个世界上最温暖的男孩是林杨吧</a>　|　<a href="#">我旅行是因为喜欢到处走动</a>　|　<a href="#">我享受旅行给我的自由感觉。</a>　|　<a href="#">去到一个陌生，新奇的世界，你不再是你；等到回来时，你会是更好的你。</a>　|
+                            </p>
+                        </div>
+                </div>
+                <div class="colsright">
+                	<div class="channel_shadow">
+	                    <div class="channel">
+	                    	<img src="images/5.png" height="408" width="240">
+	                    </div>		
+                	</div>
+                	<div class="channel_shadow">
+	                    <div class="channel">
+	                    	<img src="images/8.png" height="408" width="240">
+	                    </div>	
+	                </div>
+                </div>
+            </div>
+        </div>
+</div>
+<div id="footer">
+    <p>Higo! 带你去看全世界</p>
+</div>
+<div id="end">
+	<div class="copyright">小组版权所有 COPYRIGHT©1999-2013 , Hi Go!</div>
+</div>
+</body>
+</html>

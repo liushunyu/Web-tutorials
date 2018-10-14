@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>控制台页面</title>
+    <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+</head>
+<body class="withvernav">
+    <div class="bodywrapper">
+        <div class="topheader">
+            <div class="left">
+                <h1 class="logo">Higo.<span>Admin</span></h1>
+                <a href="/15352237/Homepage/main.html"><div class="return">
+              		<span>Home Page</span>
+                </div></a>
+                <br clear="all"/>
+                
+            </div>
+            
+            <div class="right">
+                <div class="userinfo">
+                	<img src="images/thumbs/avatar.png" alt="" />
+                    <a href="#"><span>管理员</span></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header">
+        	<ul class="headermenu">
+            	<li class="current"><a href="console.html"><span class="icon icon-flatscreen"></span>首页</a></li>
+                <li><a href=""><span class="icon icon-pencil"></span>博客管理</a></li>
+                <li><a href=""><span class="icon icon-message"></span>查看消息</a></li>
+                <li><a href=""><span class="icon icon-chart"></span>统计报表</a></li>
+            </ul>
+            
+           <div class="headerwidget">
+            	<div class="earnings">
+                	<div class="one_half">
+                    	<h4>访问总数</h4>
+                        <h2>230,000,000</h2>
+                    </div><!--one_half-->
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="centercontent">
+            <div id="contentwrapper" class="contentwrapper">
+            
+            	<div id="updates" class="subcontent">
+                        <div class="two_third dashboard_left">  
+                        	<div class="widgetbox">
+                        		<div class="title"><h3>全站查询</h3></div>
+                        		<div class="widgetcontent1">
+                        			  <form action="queryBlog.jsp" method="post">
+	   								    	<input id="query" name="query" type="text" placeholder="输入你想查询的博客关键词">
+	   										<button class="submitbutton">查 询</button>
+  									  </form> 
+  									  <br/><br/>
+                        		</div>	
+                        	</div>            
+                            <div class="widgetbox">
+                            	<div class="title"><h3>最新文章</h3></div>
+                                <div class="widgetcontent">
+                                    <div id="scroll1" class="mousescroll">
+                                            <ul class="entrylist">
+                                                  <li>
+                                                    <div class="entry_wrap">
+                                                        <div class="entry_img"><img src="images/thumbs/image1.png" alt="" /></div>
+                                                        <div class="entry_content">
+                                                            <h4><a href="">Why Won't My Cat Eat?</a></h4>
+                                                            <small>Submitted by: <a href=""><strong>Hiccup</strong></a> - June 10, 2012</small>
+                                                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non...</p>
+                                                            <p><button class="stdbtn btn_lime">Approve</button> <button class="stdbtn">Decline</button></p>
+                                                        </div>
+                                                    </div>
+                                                  </li>
+                                                  <li class="even">
+                                                    <div class="entry_wrap">
+                                                    <div class="entry_img"><img src="images/thumbs/image2.png" alt="" /></div>
+                                                    <div class="entry_content">
+                                                        <h4><a href="">We Are About Color</a></h4>
+                                                        <small>Submitted by: <a href=""><strong>Hiccup</strong></a> - June 10, 2012</small>
+                                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non...</p>
+                                                        <p><button class="stdbtn btn_lime">Approve</button> <button class="stdbtn">Decline</button></p>
+                                                    </div>
+                                                    </div>
+                                                  </li>
+                                                  <li>
+                                                    <div class="entry_wrap">
+                                                    <div class="entry_img"><img src="images/thumbs/image3.png" alt="" /></div>
+                                                    <div class="entry_content">
+                                                        <h4><a href="">Ancient Technology</a></h4>
+                                                        <small>Submitted by: <a href=""><strong>Hiccup</strong></a> - June 10, 2012</small>
+                                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non...</p>
+                                                        <p><button class="stdbtn btn_lime">Approve</button> <button class="stdbtn">Decline</button></p>
+                                                    </div>
+                                                    </div>
+                                                  </li>
+                                                  <li class="even">
+                                                    <div class="entry_wrap">
+                                                    <div class="entry_img"><img src="images/thumbs/image4.png" alt="" /></div>
+                                                    <div class="entry_content">
+                                                        <h4><a href="">Bird's Nest Soup</a></h4>
+                                                        <small>Submitted by: <a href=""><strong>Hiccup</strong></a> - June 10, 2012</small>
+                                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non...</p>
+                                                        <p><button class="stdbtn btn_lime">Approve</button> <button class="stdbtn">Decline</button></p>
+                                                    </div>
+                                                    </div>
+                                                  </li>
+                                                </ul>                        
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                        
+                        <div class="one_third last dashboard_right">        
+    						<div class="widgetbox">
+                                <div class="title"><h3>最新注册用户</h3></div>
+                                <div class="widgetoptions">
+                                    <div class="right"><a href="queryUser.jsp">查找用户</a></div>
+                                    <a href="addUser.jsp">添加用户</a>
+                                </div>
+                                <div class="widgetcontent userlistwidget nopadding">
+                                    <ul>
+                                        <li>
+                                            <div class="avatar"><img alt="" src="images/thumbs/avatar1.png" /></div>
+                                            <div class="info">
+                                                <a href="">Squint</a> <br />
+                                                Front-End Engineer <br /> 18 minutes ago
+                                            </div><!--info-->
+                                        </li>
+                                        <li>
+                                            <div class="avatar"><img alt="" src="images/thumbs/avatar2.png" /></div>
+                                            <div class="info">
+                                                <a href="">Eunice</a> <br />
+                                                Architectural Designer <br /> 18 minutes ago
+                                            </div><!--info-->
+                                        </li>
+                                        <li>
+                                            <div class="avatar"><img alt="" src="images/thumbs/avatar1.png" /></div>
+                                            <div class="info">
+                                                <a href="">Captain Gutt</a> <br />
+                                                Software Engineer <br /> 18 minutes ago
+                                            </div><!--info-->
+                                        </li>
+                                        <li>
+                                            <div class="avatar"><img alt="" src="images/thumbs/avatar2.png" /></div>
+                                            <div class="info">
+                                                <a href="">Flynn</a> <br />
+                                                Accounting Manager <br /> 18 minutes ago
+                                            </div><!--info-->
+                                        </li>
+                                    </ul>
+                                    <a class="more" href="browseUser.jsp">查看更多用户</a>
+                                </div>
+                            </div>                     
+                        </div> 
+                </div>
+            </div>  
+    	</div>
+    </div>
+
+</body>
+</html>

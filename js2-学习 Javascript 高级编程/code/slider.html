@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+  <title>Slider</title>
+  <style>
+    #slideMain {            
+      width:770px;
+      height: 300px;
+      margin: 0 auto;
+      position:relative; 
+      overflow: hidden;
+    }
+    .slides {
+      overflow: hidden;
+      position: absolute;
+      width:3080px;
+    }
+
+    .slide {
+      overflow: hidden;
+      width:770px;
+      height: 300px;
+      margin:0px;
+      padding:0px;
+      display: block;
+      float: left;   
+    }
+
+    #arrow1{
+      position: absolute;
+      top:110px;  
+      left:20px; 
+      height:80px;  
+      width:30px;  
+      overflow:hidden; 
+    }
+    #arrow2{
+      position: absolute;
+      top:110px;  
+      right:20px;
+      height:80px;  
+      width:30px;  
+      overflow:hidden; 
+    }
+    #arrowimg2{
+      position: absolute;
+      top:-80px;
+    }
+
+    #point1{
+      position: absolute;
+      top:280px;  
+      right:115px; 
+      height:12px;  
+      width:12px;  
+      overflow:hidden;
+    }
+    #pointimg1{
+      position: absolute;
+      top:-24px;
+    }
+    #point2{
+      position: absolute;
+      top:280px;  
+      right:100px; 
+      height:12px;  
+      width:12px;  
+      overflow:hidden; 
+    }
+    #pointimg2{
+      position: absolute;
+      top:-0px;
+    }
+    #point3{
+      position: absolute;
+      top:280px;  
+      right:85px; 
+      height:12px;  
+      width:12px;  
+      overflow:hidden; 
+    }
+    #pointimg3{
+      position: absolute;
+      top:-0px;
+    }
+
+    .arrow:hover,.point:hover{
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="slideMain">
+     <div class="slides" id="slides">
+         <img class="slide" src="images/img1.jpg">
+         <img class="slide" src="images/img2.jpg">
+         <img class="slide" src="images/img3.jpg">
+         <img class="slide" src="images/img1.jpg">
+     </div>
+    <div id="arrow1">  
+      <img id="arrowimg1" class="arrow" src="images/arrows-30.png">  
+    </div>  
+    <div id="arrow2">  
+      <img id="arrowimg2" class="arrow" src="images/arrows-30.png">  
+    </div> 
+    <div id="point1">  
+      <img id="pointimg1" class="point" src="images/navigator.png">  
+    </div>  
+    <div id="point2">  
+      <img id="pointimg2" class="point" src="images/navigator.png">  
+    </div>  
+    <div id="point3">  
+      <img id="pointimg3" class="point" src="images/navigator.png">  
+    </div>  
+  </div>
+</body>
+<script type="text/javascript">
+  var slides = document.getElementById("slides");
+  var slideMain = document.getElementById("slideMain");
+  var a1 = document.getElementById("arrowimg1");  
+  var a2 = document.getElementById("arrowimg2");
+  var p1 = document.getElementById("pointimg1");  
+  var p2 = document.getElementById("pointimg2");  
+  var p3 = document.getElementById("pointimg3");  
+  var stop = 0;
+  var currentimg = 0;
+  var hover = false;
+
+  function show(){
+    a1.style.visibility="visible";
+    a2.style.visibility="visible";
+    p1.style.visibility="visible";
+    p2.style.visibility="visible";
+    p3.style.visibility="visible";
+    hover = true;
+  }
+
+  function hide(){
+    a1.style.visibility="hidden";
+    a2.style.visibility="hidden";
+    p1.style.visibility="hidden";
+    p2.style.visibility="hidden";
+    p3.style.visibility="hidden";
+    hover = false;
+  }
+
+  slideMain.addEventListener('mouseover', show, false);
+  slideMain.addEventListener('mouseout', hide, false);
+  hide();
+
+  function slide(){
+    if(hover == false){
+      if(stop > 0){
+        stop = stop - 1;
+      }else{
+        if((currentimg == 0) || (currentimg == -770) || (currentimg == -1540)){
+          stop = 100;
+          currentpoint(1-currentimg/770);
+        }else if(currentimg == -2310){
+          currentimg = 0;
+          stop = 100;
+          currentpoint(1);
+        }
+        slides.style.left = currentimg + "px";
+        currentimg = currentimg - 5;
+      }
+    }
+    setTimeout(slide, 10);
+  }
+  slide();
+
+  function currentpoint(pos){
+    if(pos == 1){
+      p1.style.top = "-24px";
+      p2.style.top = "-0px";
+      p3.style.top = "-0px";
+      currentimg = 0;
+      slides.style.left = currentimg + "px";
+    }else if(pos == 2){
+      p1.style.top = "-0px";
+      p2.style.top = "-24px";
+      p3.style.top = "-0px";
+      currentimg = -770;
+      slides.style.left = currentimg + "px";
+    }else if(pos == 3){
+      p1.style.top = "-0px";
+      p2.style.top = "-0px";
+      p3.style.top = "-24px";
+      currentimg = -1540;
+      slides.style.left = currentimg + "px";
+    }
+  }
+
+  function clickarrow(pos){
+    if((currentimg <= 0 && currentimg > -770) || (currentimg <= -2310)){
+      if(pos == 1){
+        currentpoint(3);
+        currentimg = -1540;
+        slides.style.left = currentimg + "px";
+      }else if(pos == 2){
+        currentpoint(2);
+        currentimg = -770;
+        slides.style.left = currentimg + "px";
+      }
+    }else if((currentimg <= -770 && currentimg > -1540)){
+      if(pos == 1){
+        currentpoint(1);
+        currentimg = 0;
+        slides.style.left = currentimg + "px";
+      }else if(pos == 2){
+        currentpoint(3);
+        currentimg = -1540;
+        slides.style.left = currentimg + "px";
+      }
+    }else  if((currentimg <= -1540 && currentimg > -2310)){
+      if(pos == 1){
+        currentpoint(2);
+        currentimg = -770;
+        slides.style.left = currentimg + "px";
+      }else if(pos == 2){
+        currentpoint(1);
+        currentimg = 0;
+        slides.style.left = currentimg + "px";
+      }
+    }
+  }
+  
+  p1.addEventListener("click", function(){currentpoint(1);}, false);
+  p2.addEventListener("click", function(){currentpoint(2);}, false);
+  p3.addEventListener("click", function(){currentpoint(3);}, false);
+  a1.addEventListener("click", function(){clickarrow(1);}, false);
+  a2.addEventListener("click", function(){clickarrow(2);}, false);
+</script>
+</html>

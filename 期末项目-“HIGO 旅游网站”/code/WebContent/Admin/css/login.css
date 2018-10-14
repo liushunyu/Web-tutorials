@@ -1,0 +1,43 @@
+.login-box{
+	margin:50px auto;
+	width:300px;
+}
+.login-box h1{
+	height:100px;
+	font-size:40px;
+	text-align:center;
+}
+input{
+	position: relative; 
+	left:7px;
+	margin:5px;
+	width:250px; 
+	padding:10px; 
+	background-color:rgba(255,255,255,.8);
+	border-radius:5px;
+}
+
+.form-link{
+	position: relative; 
+	left:230px;
+}
+.form-link a{
+	color:aquamarine;
+	text-decoration:none;
+	font-size: 5px;
+}
+
+.login-box .inner button{
+	position: relative; 
+	left:15px;
+	margin-top:10px;
+	margin-bottom: 20px;
+	width:270px; 
+	padding:8px; 
+	background-color:rgba(56,74,151,.8); 
+	border-radius:5px;
+	border: none;
+	color:white;
+	font-size: 20px;
+	font-weight: bolder;
+}

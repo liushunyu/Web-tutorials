@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM</title>
+<style>
+p {font-size:20px}
+</style>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+  var h1 = document.createElement("h1");
+  var title = document.createTextNode("静夜思");
+  h1.appendChild(title);
+  document.body.appendChild(h1);
+
+  var p1 = document.createElement("p");
+  var text1 = document.createTextNode("床前明月光");
+  var span1 = document.createElement("span");
+  var text2 = document.createTextNode("(1)");
+  span1.appendChild(text2);
+  span1.style.verticalAlign = "super";
+  span1.style.fontSize = "12px";
+  var text3 = document.createTextNode("，疑是地上霜");
+  var span2 = span1.cloneNode(true);
+  span2.childNodes[0].nodeValue="(2)";
+  var text4 = document.createTextNode("。");
+  p1.appendChild(text1);
+  p1.appendChild(span1);
+  p1.appendChild(text3);
+  p1.appendChild(span2);
+  p1.appendChild(text4);
+
+  var p2 = p1.cloneNode(true);
+  p2.childNodes[0].nodeValue="举头望明月";
+  p2.childNodes[1].childNodes[0].nodeValue="(3)";
+  p2.childNodes[2].nodeValue="，低头思故乡";
+  p2.childNodes[3].childNodes[0].nodeValue="(4)";
+  p2.childNodes[4].nodeValue="。";
+
+  document.body.appendChild(p1);
+  document.body.appendChild(p2);
+</script>
+</html>
